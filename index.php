@@ -11,10 +11,9 @@
       <h2>About Me</h2>
       <div class="about-me">
         <p>Hi, I'm Elizabeth <br>
-        I'm an aspiring software engineer with a passion for building meaningful, user-centered projects.<br><br>
-        I enjoy working with technologies like HTML, CSS, and JavaScript, and I'm always learning and expanding my skills.
-        When I'm not coding, I'm creating unique fashion pieces that merge art and fashion, blending creativity and craftsmanship into wearable expressions of beauty.
-        <br><br>My goal is to create solutions — whether in tech or fashion — that inspire and leave a lasting impact.</p>
+        I’m a full-stack software engineer passionate about building practical, user-friendly web applications.<br><br>
+        I enjoy turning ideas into functional products and constantly learning new technologies to solve real-world problems.
+        <br><br>Experienced with React, Node.js, Express, and PostgreSQL, I’m ready to contribute to impactful software projects.</p>
 
         <img src="images/Elizabeth.jpg" class="Elizabeth" alt="Elizabeth">
       </div>
@@ -22,8 +21,8 @@
   </section>
 
   <?php
-// Projects array
-$projects = [
+  // Projects array
+  $projects = [
     [
         "title" => "Predict Website",
         "img" => "images/predict.png",
@@ -44,7 +43,7 @@ $projects = [
         "title" => "Reddit-Client",
         "img" => "images/redditClient.png",
         "desc" => "A simple React-based client for browsing Reddit posts by subreddit, with search and pagination support.",
-        "tools" => "HTML, CSS, Bootstrap",
+        "tools" => " Redux / Redux Toolkit, React, JavaScript (ES6+), CSS, Reddit API, Fetch API, Git & GitHub, Create React App",
         "live" => "",
         "code" => "https://github.com/annuoluwa/Reddit-Client.git"
     ],
@@ -52,7 +51,7 @@ $projects = [
         "title" => "Jammming",
         "img" => "images/jammming.png",
         "desc" => "Jamming is a web app that lets users search Spotify, create playlists, and manage their favorite music seamlessly.",
-        "tools" => "React, JavaScript, CSS",
+        "tools" => "React, JavaScript, CSS, Redux & Redux Toolkit, JavaScript (ES6+), Spotify Web API, OAuth 2.0 Authorization Code Flow with PKCE, Fetch API, Git & GitHub, Create React App",
         "live" => "",
         "code" => "https://github.com/annuoluwa/Jammming.git"
     ],
@@ -60,43 +59,62 @@ $projects = [
         "title" => "Tresse",
         "img" => "images/tresse.png",
         "desc" => "Tresse is a web app for managing music playlists and exploring tracks seamlessly.",
-        "tools" => "React, CSS, Node.js",
+        "tools" => "React, CSS, Node.js & Express, PostgreSql, REST API / Fetch API, Git & GitHub, OAuth 2.0 Authorization Code Flow with PKCE, ",
         "live" => "https://tresse.onrender.com",
         "code" => "https://github.com/annuoluwa/tresse.git"
     ]
 ];
-?>
+  ?>
+<section id="project">
+  <div class="projects">
+    <h2>Projects</h2>
 
-
-  <section id="project">
-    <div class="projects">
-      <h2>Projects</h2>
-
+    <div class="projects-grid">
       <?php foreach ($projects as $p): ?>
         <div class="project-card">
-          <h4><?php echo htmlspecialchars($p['title']); ?></h4>
-          <img src="<?php echo htmlspecialchars($p['img']); ?>" alt="<?php echo htmlspecialchars($p['title']); ?> screenshot">
-          <p><?php echo nl2br(htmlspecialchars($p['desc'])); ?><br>
-            <strong>Tools used:</strong> <?php echo htmlspecialchars($p['tools']); ?>
-          </p>
-          <p>
-            <a href="<?php echo htmlspecialchars($p['live']); ?>" target="_blank" rel="noopener">Live Demo</a> |
-            <a href="<?php echo htmlspecialchars($p['code']); ?>" target="_blank" rel="noopener">Source Code</a>
-          </p>
+          
+          <img src="<?php echo htmlspecialchars($p['img']); ?>" 
+               alt="<?php echo htmlspecialchars($p['title']); ?> screenshot">
+
+          <div class="project-info">
+            <h4><?php echo htmlspecialchars($p['title']); ?></h4>
+
+            <p><?php echo nl2br(htmlspecialchars($p['desc'])); ?></p>
+
+            <p><strong>Tools:</strong> 
+              <?php echo htmlspecialchars($p['tools']); ?>
+            </p>
+
+            <div class="buttons">
+              <a href="<?php echo htmlspecialchars($p['live']); ?>" target="_blank">Live Demo</a>
+              <a href="<?php echo htmlspecialchars($p['code']); ?>" target="_blank">Source Code</a>
+            </div>
+          </div>
+
         </div>
       <?php endforeach; ?>
-
     </div>
-  </section>
+
+  </div>
+</section>
+
 
   <section id="skills">
     <div class="skill">
       <h3>Skills</h3>
       <div class="imgs">
         <img src="images/html.jpg" alt="html logo image">
+        <img src="images/css.jpg" alt="css logo">
         <img src="images/js.webp" alt="JavaScript logo">
         <img src="images/git.jpg" alt="git logo">
         <img src="images/github.png" alt="github logo">
+        <img src="images/php.jpg" alt="php logo">
+        <img src="images/python.png" alt="python logo">
+        <img src="images/java.png" alt="java logo">
+        <img src="images/csharp.jpg" alt="c# logo">
+      
+        <img src="images/jquery.jpg" alt="jquery logo">
+        <img src="images/bootstrap.png" alt="bootstrap logo">
       </div>
     </div>
   </section>

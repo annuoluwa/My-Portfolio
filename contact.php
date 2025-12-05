@@ -1,4 +1,7 @@
-<?php
+<?php 
+$extra_css = '<link href="contact.css" rel="stylesheet">';
+include "header.php";
+  
 // Initialize variables
 $name = $email = $message = "";
 $success = "";
@@ -8,7 +11,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email = htmlspecialchars(trim($_POST["email"]));
     $message = htmlspecialchars(trim($_POST["message"]));
 
-    // validation
+    // Simple validation
     if (!empty($name) && !empty($email) && !empty($message)) {
         // Email sending ( works on server with proper configuration)
         $to = "leezabethyomi@gmail.com"; 
@@ -38,29 +41,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <link href="contact.css" rel="stylesheet">
 </head>
 <body>
-    <nav class="desktop">
-        <ul>
-            <li><h1>Elizabeth Osunsanwo</h1></li>
-            <li><a href="index.php">Home</a></li>
-            <li><a href="#about">About Me</a></li>
-            <li><a href="#project">Projects</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="contact.php">Contact</a></li>
-        </ul>
-    </nav>
 
-    <div class="nav-container">
-        <h1>Elizabeth O</h1>
-        <button id="mobileToggle">☰Menu</button>
-        <nav id="mobile">
-            <ul>
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#project">Projects</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="contact.php">Contact</a></li>
-            </ul>
-        </nav>
-    </div>
 
     <section class="contact-container">
         <h2>Contact Me</h2>
