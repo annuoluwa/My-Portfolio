@@ -5,8 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta name="description" content="Elizabeth Osunsanwo — Full-stack developer portfolio showcasing projects in React, PHP, Node.js, and more.">
   <title>Elizabeth Osunsanwo — Portfolio</title>
-  <link href="style.css" rel="stylesheet">
-  <link href="header.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/header.css" rel="stylesheet">
   <?php if (isset($extra_css)) echo $extra_css; ?>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
