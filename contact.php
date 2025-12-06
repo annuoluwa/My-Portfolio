@@ -1,5 +1,5 @@
 <?php 
-$extra_css = '<link href="contact.css" rel="stylesheet">';
+$extra_css = '<link href="css/contact.css" rel="stylesheet">';
 include "header.php";
   
 // Initialize variables
