@@ -49,7 +49,8 @@
     ],
     [
         "title" => "Jammming",
-        "img" => "images/jammming.png",
+        "img" => "images/jammming.avif",
+        
         "desc" => "Jamming is a web app that lets users search Spotify, create playlists, and manage their favorite music seamlessly.",
         "tools" => "React, JavaScript, CSS, Redux & Redux Toolkit, JavaScript (ES6+), Spotify Web API, OAuth 2.0 Authorization Code Flow with PKCE, Fetch API, Git & GitHub, Create React App",
         "live" => "https://jammm2music.netlify.app/",
