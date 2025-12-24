@@ -37,10 +37,6 @@ portfolio/
 ├── style.css
 ```
 
-## Customization
-- Edit `about.php` and `index.php` to add your bio and projects.
-- Update styles in `style.css`, `header.css`, and `contact.css` for your preferred look.
-- Add images to the `images/` folder and reference them in your pages.
 
 ## License
 This project is open source and free to use for personal portfolio purposes.
